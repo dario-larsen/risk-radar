@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risk Radar — pre-token protocols ranked by risk-adjusted value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to the board</a>
+<header class="top">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">R</div>
+    <div>
+      <h1>Risk Radar</h1>
+      <p class="sub">Pre-token protocols, ranked by what they are worth after their risks are priced in.</p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button data-view="board" class="tab on" type="button">Board</button>
+    <button data-view="live" class="tab" type="button">Already trading</button>
+    <button data-view="model" class="tab" type="button">How it scores</button>
+  </nav>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer class="foot">
+  <p>Implied values are this radar's own claim from the sealed snapshot, never a market price. A protocol
+  shown as pre-token is one whose DefiLlama record carries no token — the record is not proof it has none.
+  Nothing here is investment advice.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
